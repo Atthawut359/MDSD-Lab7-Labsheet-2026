@@ -461,9 +461,9 @@ flutter run
 
 > ✅ **Checkpoint 0.1** ถ่ายภาพหน้าจอ 2 ภาพ คือ (ก) หน้า Home ที่แสดงรายการสินค้าจริงจาก API และ (ข) หน้า Checkout ที่มีสินค้าที่เพิ่มไว้ เป็นหลักฐานว่าโปรเจกต์ตั้งต้นถูกต้องสมบูรณ์ก่อนเริ่มทำเนื้อหา Gemini API ต่อ
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่
-```
+<img width="1581" height="346" alt="image" src="https://github.com/user-attachments/assets/8f842ef1-be71-4b3e-9e07-8e4d5599dd81" />
+<img width="1012" height="467" alt="image" src="https://github.com/user-attachments/assets/e8b416c6-6193-4b6a-bf13-8af4f73479cc" />
+
 
 > ⚠️ ถ้าหน้าจอ Home แสดง Error เช่น "ไม่สามารถโหลดรายการสินค้าได้ (สถานะ 523)" ไม่ใช่ปัญหาจากไฟล์ที่คัดลอกมา แต่เป็น Fake Store API (fakestoreapi.com) ล่มชั่วคราว (Error ของ Cloudflare ที่แปลว่าเซิร์ฟเวอร์ต้นทางเข้าไม่ถึง) ให้รอแล้วลองใหม่ หรือแจ้งอาจารย์/TA เพื่อขอไฟล์ `ItemRepositoryMock` สำรองไว้ทดสอบโดยไม่ง้อเครือข่าย
 
@@ -494,9 +494,10 @@ flutter run
 
 > ✅ **Checkpoint 1.1** ถ่ายภาพหน้าจอ Google AI Studio ที่แสดงรูปภาพที่แนบ Prompt ที่ใช้ และผลลัพธ์ JSON ที่ได้ จากนั้นทดลองรันซ้ำอีก 2 ครั้งด้วยภาพและ Prompt เดิม
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่
-```
+<img width="1190" height="673" alt="image" src="https://github.com/user-attachments/assets/8204c427-ecfe-44b4-8246-d54cd8dd7abc" />
+<img width="1198" height="445" alt="image" src="https://github.com/user-attachments/assets/c94b7633-0dd8-4a89-b431-5a0f877850fd" />
+<img width="1161" height="431" alt="image" src="https://github.com/user-attachments/assets/cb27d3ed-2846-4430-bb5b-74d2a287cd56" />
+
 
 ### ขั้นตอนที่ 1.2: ทดลองเปิดใช้ Structured Output ใน AI Studio
 
@@ -504,9 +505,9 @@ flutter run
 
 > ✅ **Checkpoint 1.2** ถ่ายภาพหน้าจอที่แสดงการตั้งค่า Structured Output และผลลัพธ์ที่ได้ อธิบายว่าผลลัพธ์ที่ได้ต่างจากตอนไม่เปิด Structured Output ในขั้นตอน 1.1 อย่างไร (อ้างอิงบทหนังสือเรียนหัวข้อ 7.4)
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="930" height="512" alt="image" src="https://github.com/user-attachments/assets/7c8b47be-08ee-43bf-9902-4f277e13ca0c" />
+<img width="1171" height="193" alt="image" src="https://github.com/user-attachments/assets/3975ba87-d184-429e-a43c-b79dab207fd6" />
+ตอนที่ปิด Structured Output คำตอบเรียงลงมาเหมือน Prompt ที่พิมพ์บอกไป
 
 ---
 
@@ -531,9 +532,9 @@ flutter run
 
 > ✅ **Checkpoint 2.1** รันแอปด้วยคำสั่ง `flutter run --dart-define=GEMINI_API_KEY=your_key` ถ่ายภาพหน้าจอ Debug Console และหน้า SnackBar ที่แสดงข้อความคำตอบจาก Gemini และอธิบายด้านล่าง ว่า `.timeout()` ที่ตั้งไว้กับ Gemini API (20 วินาที) ต่างจากที่ตั้งไว้กับ OpenWeather API ในสัปดาห์ที่แล้ว (10 วินาที) อย่างไร และทำไมจึงต่างกัน (อ้างอิงบทหนังสือเรียนหัวข้อ 7.3)
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="1917" height="993" alt="image" src="https://github.com/user-attachments/assets/4f8b774c-3a19-4dd9-aa73-1f6c70c089dc" />
+<img width="932" height="705" alt="image" src="https://github.com/user-attachments/assets/bc865095-8563-4a0c-aa62-879c1576dc60" />
+
 
 ---
 
