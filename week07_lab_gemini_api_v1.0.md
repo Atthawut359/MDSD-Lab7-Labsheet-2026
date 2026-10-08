@@ -898,9 +898,9 @@ class MyApp extends StatelessWidget {
 
 > ✅ **Checkpoint 3.1** รันแอปแล้วทดสอบกด Bottom Navigation Bar สลับไปมาระหว่าง "หน้าหลัก" กับ "ลงประกาศขาย" อย่างน้อย 3 รอบ ถ่ายภาพหน้าจอ 2 ภาพ คือ (ก) Tab หน้าหลักที่มี Bottom Navigation Bar แสดงอยู่ด้านล่าง และ (ข) Tab ลงประกาศขายที่เลือกรูปภาพสินค้าไว้แล้ว จากนั้นทดสอบเพิ่มเติมว่าเลือกรูปภาพไว้ใน Tab ลงประกาศขาย แล้วสลับไป Tab หน้าหลักแล้วสลับกลับมา รูปภาพที่เลือกไว้ยังอยู่หรือไม่ (ถ้าหายไป แปลว่ายังใช้ `IndexedStack` ไม่ถูกต้อง ให้ตรวจสอบโค้ดใน `MainScaffold` อีกครั้ง) และทดสอบว่าไอคอนตะกร้าใน AppBar ของ Tab หน้าหลักยังกดไปหน้า Checkout ได้ตามปกติเหมือนที่ทดสอบไว้แล้วใน Checkpoint 0.1
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="407" height="937" alt="สกรีนช็อต 2026-10-08 173815" src="https://github.com/user-attachments/assets/64722545-dead-4124-a1bb-df20497078d9" />
+<img width="403" height="937" alt="สกรีนช็อต 2026-10-08 173912" src="https://github.com/user-attachments/assets/df51b32d-e7dc-47ac-a93b-553222b866dd" />
+
 
 ---
 
@@ -946,9 +946,11 @@ class ListingDraft {
 
 > ✅ **Checkpoint 4.1** รันแอปแล้วทดสอบเลือกภาพสินค้าจริง กดปุ่ม "ให้ AI ช่วยแนะนำ" ถ่ายภาพหน้าจอผลลัพธ์ที่ AI วิเคราะห์ได้ (title/category/description) ทดสอบซ้ำกับภาพสินค้าอย่างน้อย 3 ภาพที่ต่างกัน แนบภาพหน้าจอทั้ง 3 กรณี 
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="353" height="830" alt="สกรีนช็อต 2026-10-08 175731" src="https://github.com/user-attachments/assets/32e952ea-f78d-4ad9-ac14-0a0cda6982c4" />
+<img width="413" height="968" alt="สกรีนช็อต 2026-10-08 192251" src="https://github.com/user-attachments/assets/bbd6ab88-f1bc-474e-9fe5-b3433520435c" />
+<img width="417" height="970" alt="สกรีนช็อต 2026-10-08 192425" src="https://github.com/user-attachments/assets/47e55755-b175-4ee7-8091-25493a8232cf" />
+
+
 ---
 
 ## ส่วนที่ 5: ออกแบบหน้าจอตรวจทานและแก้ไขก่อนยืนยัน (Human-in-the-loop)
@@ -966,9 +968,10 @@ class ListingDraft {
 เพิ่มปุ่มที่เก็บค่าจากฟอร์ม (ซึ่งอาจถูกผู้ใช้แก้ไขแล้วหรือไม่ก็ได้) เป็นร่างประกาศฉบับสุดท้ายไว้ใน State ของแอป (ยังไม่ต้องบันทึกถาวร เพราะเรื่อง Local Database อยู่ในสัปดาห์ที่ 8) หลังยืนยันสำเร็จ ให้แสดง `SnackBar` ยืนยัน (เช่น "บันทึกร่างประกาศเรียบร้อยแล้ว") แล้วล้างฟอร์ม (รูปภาพที่เลือก, ค่าใน `TextEditingController` ทั้ง 3 ช่อง) กลับสู่สถานะว่างเปล่าพร้อมเริ่มลงประกาศใหม่ **ไม่ต้อง `Navigator.pop()`** เหมือนหน้าที่เปิดด้วย `Navigator.push` เพราะตอนนี้ `SellItemPage` เป็น Tab หนึ่งใน Bottom Navigation Bar แล้ว (ตั้งแต่ขั้นตอนที่ 3.3) ไม่ได้ถูกเปิดแบบ Push/Pop อีกต่อไป ผู้ใช้ที่ต้องการกลับหน้าหลักให้กดที่ Tab "หน้าหลัก" ด้านล่างจอเองแทน
 
 > ✅ **Checkpoint 5.1** ถ่ายภาพหน้าจอ 2 ภาพเทียบกัน คือ (ก) ค่าที่ AI แนะนำมาตอนแรก และ (ข) ค่าหลังจากคุณแก้ไขบางส่วนแล้วกดยืนยัน 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+
+<img width="418" height="973" alt="สกรีนช็อต 2026-10-08 194414" src="https://github.com/user-attachments/assets/895bc95f-d0d2-488c-8ce0-cf871f2b110b" />
+<img width="417" height="975" alt="สกรีนช็อต 2026-10-08 194247" src="https://github.com/user-attachments/assets/e70a606a-7b12-4b1f-b057-57f6224ec0b2" />
+
 
 ---
 
@@ -995,9 +998,8 @@ class ListingDraft {
 
 > ✅ **Checkpoint 6.1** ถ่ายภาพหน้าจอ Error ที่แอปแสดงเมื่อ Gemini ปฏิเสธคำขอ  จากนั้น**เปลี่ยน `_prompt` ใน `sell_item_page.dart` กลับเป็นเวอร์ชันที่ใช้งานจริงตามส่วนที่ 4** ก่อนส่งงาน ⚠️ ขั้นตอนนี้สำคัญมาก ถ้าลืมเปลี่ยนกลับ ฟีเจอร์หลักของแอปจะใช้งานไม่ได้เลย เพราะ Prompt ที่เหลือทิ้งไว้จะถูก Gemini บล็อกทุกครั้ง
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="416" height="975" alt="image" src="https://github.com/user-attachments/assets/bc561dab-66a0-4c2a-ba8e-4199bf453470" />
+
 ---
 
 
